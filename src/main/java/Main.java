@@ -12,7 +12,8 @@ public class Main {
         }
         System.out.println();
 //        replace(arr);
-        toArrayList();
+//        toArrayList();
+        boxes();
     }
 
     private static void replace(LinkedList arr){
@@ -38,5 +39,37 @@ public class Main {
         ArrayList<Integer> newList = new ArrayList<>(arr.length);
         Collections.addAll(newList, arr);
         for (int i = 0; i< arr.length; i++) System.out.print(newList.get(i) + " ");
+    }
+
+    private static void boxes(){
+        Box<Orange> orangeBox = new Box<Orange>();
+        orangeBox.add(new Orange());
+        orangeBox.add(new Orange());
+        orangeBox.add(new Orange());
+        orangeBox.add(new Orange());
+        orangeBox.add(new Orange());
+        orangeBox.add(new Orange());
+        System.out.println("Вес коробки: " + orangeBox.getWeight());
+
+        Box<Apple> appleBox = new Box<>();
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+        appleBox.add(new Apple());
+
+        System.out.println(orangeBox.compare(appleBox));
+
+        Box<Orange> orangeBox1 = new Box<Orange>();
+        orangeBox1.add(new Orange());
+        orangeBox1.add(new Orange());
+        orangeBox1.add(new Orange());
+        orangeBox1.add(new Orange());
+        orangeBox1.add(new Orange());
+
+        orangeBox.addAll(orangeBox1);
     }
 }
