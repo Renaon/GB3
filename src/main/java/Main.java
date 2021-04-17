@@ -11,8 +11,8 @@ public class Main {
             System.out.print(arr.get(i) + " ");
         }
         System.out.println();
-//        replace(arr);
-//        toArrayList();
+        replace(arr);
+        toArrayList();
         boxes();
     }
 
