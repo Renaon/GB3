@@ -2,13 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Box <T extends Fruit>{
-    private ArrayList<T> fruits = new ArrayList<>();
-    private float appleWeight = 1.0f;
-    private float orangeWeight = 1.5f;
-
-//    public Box(Fruit f){
-//        fruits.add(f);
-//    }
+    private final ArrayList<T> fruits = new ArrayList<>();
 
     public ArrayList<T> getFruits(){
         return fruits;
@@ -37,9 +31,7 @@ public class Box <T extends Fruit>{
 
     public Float getWeight(){
         float totalWeight = 0f;
-        float oneWeight = 0f;
-        if(fruits.get(0) instanceof Apple) oneWeight = appleWeight;
-        else if(fruits.get(0) instanceof Orange) oneWeight = orangeWeight;
+        float oneWeight = fruits.get(0).getWeight();
 
         for(int i=0; i<fruits.size(); i++){
             totalWeight += oneWeight;

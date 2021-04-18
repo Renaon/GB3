@@ -11,8 +11,8 @@ public class Main {
             System.out.print(arr.get(i) + " ");
         }
         System.out.println();
-//        replace(arr);
-//        toArrayList();
+        replace(arr);
+        toArrayList();
         boxes();
     }
 
@@ -42,7 +42,7 @@ public class Main {
     }
 
     private static void boxes(){
-        Box<Orange> orangeBox = new Box<Orange>();
+        Box<Orange> orangeBox = new Box<>();
         orangeBox.add(new Orange());
         orangeBox.add(new Orange());
         orangeBox.add(new Orange());
