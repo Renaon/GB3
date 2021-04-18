@@ -4,8 +4,6 @@ import java.util.Collections;
 public class Box <T extends Fruit>{
     private final ArrayList<T> fruits = new ArrayList<>();
 
-
-
     public ArrayList<T> getFruits(){
         return fruits;
     }

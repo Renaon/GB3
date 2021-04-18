@@ -1,8 +1,8 @@
 public class Apple extends Fruit {
-    private float weight = 1.0f;
+    private final float weight = 1.0f;
 
     @Override
     public float getWeight() {
-        return weight;
+        return this.weight;
     }
 }
