@@ -1,5 +1,6 @@
+package lesson1;
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Box <T extends Fruit>{
     private final ArrayList<T> fruits = new ArrayList<>();
